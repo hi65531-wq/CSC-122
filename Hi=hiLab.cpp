@@ -28,6 +28,7 @@ int strcmp_case_insensitive(const string& str1, const string& str2)
         i++;
     }
 
+    // what returns based on length
     if (str1.length() < str2.length())
     {
         return -1;
