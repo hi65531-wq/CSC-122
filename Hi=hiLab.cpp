@@ -4,7 +4,6 @@
 #include <iostream>
 #include <string>
 #include <cassert>
-#include <cctype>
 using namespace std;
 
 int strcmp_case_insensitive(const string& str1, const string& str2)
