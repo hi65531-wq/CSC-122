@@ -13,6 +13,7 @@ int strcmp_case_insensitive(const string& str1, const string& str2)
 
     while(i < str1.length() && i < str2.length())
     {
+        // convert characters to lowercase for case insensitive comparison
         char c1 = tolower((unsigned char)str1[i]);
         char c2 = tolower((unsigned char)str2[i]);
 
@@ -29,6 +30,7 @@ int strcmp_case_insensitive(const string& str1, const string& str2)
         i++;
     }
 
+    // reults depending on length of the strings
     if (str1.length() < str2.length())
     {
         return -1;
@@ -45,7 +47,7 @@ int strcmp_case_insensitive(const string& str1, const string& str2)
 
 int main()
 {
-    // equal testS
+    // equal test
     assert(strcmp_case_insensitive("hello", "hello") == 0);
     assert(strcmp_case_insensitive("HELLO", "hello") == 0);
 
